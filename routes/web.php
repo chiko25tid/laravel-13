@@ -37,4 +37,4 @@ Route::get('/matakuliah/show/{kode?}', function ($kode = null) {
 });
 
 Route::post('question/store', [QuestionController::class, 'store'])
-    ->name('question.store');
+		->name('question.store');
