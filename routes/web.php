@@ -10,6 +10,13 @@ use App\Http\Controllers\HomeController;
 
 use App\Http\Controllers\QuestionController;
 
+use App\Http\Controllers\DashboardController;
+
+Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+
+
+
 Route::get('/about', function () {
     return view('halaman-about');
 });
@@ -38,3 +45,4 @@ Route::get('/matakuliah/show/{kode?}', function ($kode = null) {
 
 Route::post('question/store', [QuestionController::class, 'store'])
 		->name('question.store');
+
