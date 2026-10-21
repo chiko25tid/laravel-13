@@ -102,16 +102,15 @@
                         <span class="sidebar-text">Dashboard</span>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <span class="nav-link  collapsed  d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#submenu-app">
-                        <span>
-                            <span class="sidebar-icon">
-                                <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z" clip-rule="evenodd"></path>
-                                </svg>
-                            </span>
-                            <span class="sidebar-text">Tables</span>
+                <li class="nav-item  active ">
+                    <a href="{{ route('pelanggan.index') }}" class="nav-link">
+                        <span class="sidebar-icon">
+                            <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
+                                <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
+                            </svg>
                         </span>
+                        <span class="sidebar-text">Pelanggan</span>
                         <span class="link-arrow">
                             <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
@@ -777,8 +776,10 @@
 			<div class="col-12 col-xl-4">
 				<div class="col-12 px-0 mb-4">
 					<div class="card shadow border-0 text-center p-0">
-						<div class="profile-cover rounded-top" data-background="../../assets/img/profile-cover.jpg" style="background: url(&quot;../../assets/img/profile-cover.jpg&quot;);"></div>
-						<div class="card-body pb-5">
+						<div class="profile-cover rounded-top"
+        						data-background="{{ asset('assets.admin/img/profile-cover.jpg') }}"
+         						style="background: url('{{ asset('assets.admin/img/profile-cover.jpg') }}');">
+   						</div>
 							<img src="{{ asset('assets.admin/img/team/profile-picture-1.jpg') }}" class="avatar-xl rounded-circle mx-auto mt-n7 mb-4" alt="Neil Portrait">
 							<h4 class="h3">Neil Sims</h4>
 							<h5 class="fw-normal">Senior Software Engineer</h5>
