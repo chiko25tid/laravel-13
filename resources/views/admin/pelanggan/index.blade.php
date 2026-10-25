@@ -27,23 +27,23 @@
     <meta name="author" content="Themesberg">
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('assets.admin/img/favicon/apple-touch-icon.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets.admin/img/favicon/favicon-32x32.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets.admin/img/favicon/favicon-16x16.png') }}">
-    <link rel="manifest" href="{{ asset('assets.admin/img/favicon/site.webmanifest') }}">
-    <link rel="mask-icon" href="{{ asset('assets.admin/img/favicon/safari-pinned-tab.svg') }}" color="#ffffff">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('assets-admin/img/favicon/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets-admin/img/favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets-admin/img/favicon/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('assets-admin/img/favicon/site.webmanifest') }}">
+    <link rel="mask-icon" href="{{ asset('assets-admin/img/favicon/safari-pinned-tab.svg') }}" color="#ffffff">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
 
     <!-- Volt CSS -->
-    <link type="text/css" href="{{ asset('assets.admin/css/volt.css') }}" rel="stylesheet">
+    <link type="text/css" href="{{ asset('assets-admin/css/volt.css') }}" rel="stylesheet">
 
 </head>
 
 <body>
     <nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-lg-none">
         <a class="navbar-brand me-lg-5" href="../../index.html">
-            <img class="navbar-brand-dark" src="{{ asset('assets.admin/img/brand/light.svg') }}" alt="Volt logo" /> <img class="navbar-brand-light" src="{{ asset('') }}assets.admin/img/brand/dark.svg" alt="Volt logo" />
+            <img class="navbar-brand-dark" src="{{ asset('assets-admin/img/brand/light.svg') }}" alt="Volt logo" /> <img class="navbar-brand-light" src="{{ asset('') }}assets-admin/img/brand/dark.svg" alt="Volt logo" />
         </a>
         <div class="d-flex align-items-center">
             <button class="navbar-toggler d-lg-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,7 +57,7 @@
             <div class="user-card d-flex d-md-none align-items-center justify-content-between justify-content-md-center pb-4">
                 <div class="d-flex align-items-center">
                     <div class="avatar-lg me-4">
-                        <img src="{{ asset('assets.admin/img/team/profile-picture-3.jpg') }}" class="card-img-top rounded-circle border-white" alt="Bonnie Green">
+                        <img src="{{ asset('assets-admin/img/team/profile-picture-3.jpg') }}" class="card-img-top rounded-circle border-white" alt="Bonnie Green">
                     </div>
                     <div class="d-block">
                         <h2 class="h5 mb-3">Hi, Jane</h2>
@@ -82,7 +82,7 @@
                 <li class="nav-item">
                     <a href="../../index.html" class="nav-link d-flex align-items-center">
                         <span class="sidebar-icon">
-                            <img src="{{ asset('assets.admin/img/brand/light.svg') }}" height="20" width="20" alt="Volt Logo">
+                            <img src="{{ asset('assets-admin/img/brand/light.svg') }}" height="20" width="20" alt="Volt Logo">
                         </span>
                         <span class="mt-1 ms-1 sidebar-text">Volt Overview</span>
                     </a>
@@ -100,7 +100,7 @@
                 </li>
                 <!-- Tambahkan blok kode ini -->
                 <li class="nav-item  active ">
-                    <a href="" class="nav-link">
+                    <a href="{{ route('pelanggan.index') }}" class="nav-link">
                         <span class="sidebar-icon">
                             <svg class="icon icon-xs me-2" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"></path>
@@ -169,7 +169,7 @@
                                         <div class="row align-items-center">
                                             <div class="col-auto">
                                                 <!-- Avatar -->
-                                                <img alt="Image placeholder" src="{{ asset('assets.admin/img/team/profile-picture-1.jpg') }}" class="avatar-md rounded">
+                                                <img alt="Image placeholder" src="{{ asset('assets-admin/img/team/profile-picture-1.jpg') }}" class="avatar-md rounded">
                                             </div>
                                             <div class="col ps-0 ms-2">
                                                 <div class="d-flex justify-content-between align-items-center">
@@ -188,7 +188,7 @@
                                         <div class="row align-items-center">
                                             <div class="col-auto">
                                                 <!-- Avatar -->
-                                                <img alt="Image placeholder" src="{{ asset('assets.admin/img/team/profile-picture-2.jpg') }}" class="avatar-md rounded">
+                                                <img alt="Image placeholder" src="{{ asset('assets-admin/img/team/profile-picture-2.jpg') }}" class="avatar-md rounded">
                                             </div>
                                             <div class="col ps-0 ms-2">
                                                 <div class="d-flex justify-content-between align-items-center">
@@ -207,7 +207,7 @@
                                         <div class="row align-items-center">
                                             <div class="col-auto">
                                                 <!-- Avatar -->
-                                                <img alt="Image placeholder" src="{{ asset('assets.admin/img/team/profile-picture-3.jpg') }}" class="avatar-md rounded">
+                                                <img alt="Image placeholder" src="{{ asset('assets-admin/img/team/profile-picture-3.jpg') }}" class="avatar-md rounded">
                                             </div>
                                             <div class="col ps-0 m-2">
                                                 <div class="d-flex justify-content-between align-items-center">
@@ -235,7 +235,7 @@
                         <li class="nav-item dropdown ms-lg-3">
                             <a class="nav-link dropdown-toggle pt-1 px-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <div class="media d-flex align-items-center">
-                                    <img class="avatar rounded-circle" alt="Image placeholder" src="{{ asset('assets.admin/img/team/profile-picture-3.jpg') }}">
+                                    <img class="avatar rounded-circle" alt="Image placeholder" src="{{ asset('assets-admin/img/team/profile-picture-3.jpg') }}">
                                     <div class="media-body ms-2 text-dark align-items-center d-none d-lg-block">
                                         <span class="mb-0 font-small fw-bold text-gray-900">Bonnie Green</span>
                                     </div>
@@ -287,7 +287,7 @@
                     <p class="mb-0">List data seluruh pelanggan</p>
                 </div>
                 <div>
-                    <a href="" class="btn btn-success text-white"><i class="far fa-question-circle me-1"></i> Tambah Pelanggan</a>
+                    <a href="{{ route('pelanggan.create') }}"  class="btn btn-success text-white"><i class="far fa-question-circle me-1"></i> Tambah Pelanggan</a>
                 </div>
             </div>
         </div>
@@ -297,6 +297,11 @@
                 <div class="card border-0 shadow mb-4">
                     <div class="card-body">
                         <div class="table-responsive">
+                            @if (session('success'))
+                                <div class="alert alert-success" role="alert">
+                                    {{ session('success') }}
+                                </div>
+                            @endif
                             <table id="table-pelanggan" class="table table-centered table-nowrap mb-0 rounded">
                                 <thead class="thead-light">
                                     <tr>
@@ -309,20 +314,35 @@
                                         <th class="border-0 rounded-end">Action</th>
                                     </tr>
                                 </thead>
-                            <tbody>
-                                @foreach($dataPelanggan as $item)
-                                    <tr>
-                                        <td>{{ $item->first_name }}</td>
-                                        <td>{{ $item->last_name }}</td>
-                                        <td>{{ $item->birhday }}</td>
-                                        <td>{{ $item->gender }}</td>
-                                        <td>{{ $item->email }}</td>
-                                        <td>{{ $item->phone }}</td>
-                                        <td>Tombol Edit & Tombol Hapus</td>
-                                    </tr>
-                                @endforeach
-                            </tbody>
-
+                                <tbody>
+                                    @foreach($dataPelanggan as $item)
+                                        <tr>
+                                            <td>{{ $item->first_name}}</td>
+                                            <td>{{ $item->last_name}}</td>
+                                            <td>{{ $item->birthday}}</td>
+                                            <td>{{ $item->gender}}</td>
+                                            <td>{{ $item->email}}</td>
+                                            <td>{{ $item->phone}}</td>
+                                            <td>
+                                                <a href="{{ route('pelanggan.edit', $item->pelanggan_id) }}" class="btn btn-info btn-sm">
+                                                <svg  class="icon icon-xs me-2" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10"></path>
+                                                </svg>
+                                                Edit
+                                                </a>
+                                                <form action="{{ route('pelanggan.destroy', $item->pelanggan_id) }}" method="POST" style="display:inline">
+                                                    @csrf
+                                                    @method("DELETE")
+                                                    <button type="submit" class="btn btn-danger btn-sm">
+                                                        <svg class="icon icon-xs me-2" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"></path>
+                                                            </svg>
+                                                        Hapus
+                                                    </button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>
@@ -358,11 +378,11 @@
     </main>
 
     <!-- Core -->
-    <script src="{{ asset('assets.admin/vendor/@popperjs/core/dist/umd/popper.min.js') }}"></script>
-    <script src="{{ asset('assets.admin/vendor/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('assets-admin/vendor/@popperjs/core/dist/umd/popper.min.js') }}"></script>
+    <script src="{{ asset('assets-admin/vendor/bootstrap/dist/js/bootstrap.min.js') }}"></script>
 
     <!-- Volt JS -->
-    <script src="{{ asset('assets.admin/js/volt.js') }}"></script>
+    <script src="{{ asset('assets-admin/js/volt.js') }}"></script>
 </body>
 
 </html>
