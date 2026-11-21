@@ -7,18 +7,20 @@ use App\Models\Pelanggan;
 
 class PelangganController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
+    public function index(Request $request)
     {
-        $data['dataPelanggan'] = Pelanggan::all();
-		return view('admin.pelanggan.index',$data);
+        $filterableColumns = ['gender'];
+
+        $searchableColumns = ['first_name', 'last_name', 'email'];
+
+        $data['dataPelanggan'] = Pelanggan::filter($request, $filterableColumns)
+            ->search($request, $searchableColumns)
+            ->paginate(10)
+            ->withQueryString();
+
+        return view('admin.pelanggan.index', $data);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
     public function create()
     {
         return view('admin.pelanggan.create');
