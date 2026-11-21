@@ -1,4 +1,5 @@
-    <nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-lg-none">
+{{-- Start Sidebar --}}
+<nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-lg-none">
         <a class="navbar-brand me-lg-5" href="../../index.html">
             <img class="navbar-brand-dark" src="{{ asset('assets-admin/img/brand/light.svg') }}" alt="Volt logo" /> <img
                 class="navbar-brand-light" src="{{ asset('') }}assets-admin/img/brand/dark.svg" alt="Volt logo" />
@@ -116,6 +117,8 @@
                                 class="badge badge-sm bg-secondary ms-1 text-gray-800">v1.4</span></span>
                     </a>
                 </li>
+
             </ul>
         </div>
     </nav>
+{{-- End sidebar --}}

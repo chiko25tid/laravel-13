@@ -81,9 +81,9 @@
                                     </div>
 
                                     <!-- Buttons -->
-                                    <div class="mb-3">
+                                    <div class="">
                                         <button type="submit" class="btn btn-primary">Simpan</button>
-                                        <a href="{{ route('user.index') }}" class="btn btn-outline-secondary ms-2">Batal</a>
+                                        <a href="{{ route('pelanggan.index') }}" class="btn btn-outline-secondary ms-2">Batal</a>
                                     </div>
                                 </div>
                             </div>
